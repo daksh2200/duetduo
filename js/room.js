@@ -32,7 +32,13 @@
 // });
 
 
+let queryString = window.location.search
+let urlParams = new URLSearchParams(queryString)
+let roomId = urlParams.get('room')
 
+if(!roomId){
+    window.location='lobby.html'
+}
 
 
 let displayFrame = document.getElementById('stream_box')
