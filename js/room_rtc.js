@@ -14,7 +14,7 @@ const urlParams = new URLSearchParams(query)
 let roomId = urlParams.get('room')
 
 if(!roomId){
-    roomId='lobby.html'
+    roomId='main'
 }
 
 let localTracks=[]
